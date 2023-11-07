@@ -15,12 +15,15 @@ function makeGrid(rows, cols) {
 }
 
 function clearGrid() {
-  container.removeChild([...item]);
+  [...itemGrid].forEach((item) => {
+    container.removeChild(item);
+  });
 }
 
 makeGrid(40, 40);
 const itemGrid = document.querySelectorAll(".grid-item");
 
+//Color chaning buttons
 [...itemGrid].forEach((item) => {
   item.addEventListener("mouseover", () => {
     item.classList.add("item-color");

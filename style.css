@@ -39,3 +39,10 @@ body {
 .item-black {
   background: black;
 }
+
+.item_32 {
+  width: 12, 5px;
+  height: 12, 5px;
+  padding: 0px;
+  border: 1px solid black;
+}
