@@ -2,24 +2,34 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 #containerSketch {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 425px;
+  width: 404px;
+  height: 404px;
   margin: auto;
   border: 2px solid black;
+  overflow: hidden;
 }
 
 .grid-item {
   width: 25px;
   height: 25px;
   padding: 0px;
-  border: 0.5px solid grey;
-  text-align: center;
-  font-size: 14px;
+  border: 1px solid black;
 }
 
 .item-color {
