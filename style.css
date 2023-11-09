@@ -4,45 +4,31 @@
 
 body {
   display: flex;
+  gap: 50px;
+  background: rgb(138, 16, 52);
 }
 
-.btn-div {
+.btn-colors {
+  display: block;
+  border-radius: 10px;
+
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  flex-flow: column wrap;
+  gap: 20px;
 }
 
-#containerSketch {
+.container {
+  background: white;
+  box-sizing: content-box;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 404px;
-  height: 404px;
-  margin: auto;
+  flex-flow: row wrap;
+  width: 500px;
+  height: 500px;
   border: 2px solid black;
-  overflow: hidden;
 }
 
-.grid-item {
-  width: 25px;
-  height: 25px;
-  padding: 0px;
-  border: 1px solid black;
-}
-
-.item-color {
-  background: blue;
-}
-
-.item-black {
-  background: black;
-}
-
-.item_32 {
-  width: 12, 5px;
-  height: 12, 5px;
-  padding: 0px;
-  border: 1px solid black;
+.container div {
+  box-sizing: border-box;
+  border: 1px solid grey;
+  flex: 1 10px;
 }
